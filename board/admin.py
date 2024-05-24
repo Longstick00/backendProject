@@ -1,10 +1,11 @@
 from django.contrib import admin
+from .models import Board
 
-from board.models import Post
-
-
-class PostAdmin(admin.ModelAdmin):
-    pass
+# Register your models here.
 
 
-admin.site.register(Post, PostAdmin)
+class BoardAdmin(admin.ModelAdmin):
+    list_display = ('title',)
+
+
+admin.site.register(Board, BoardAdmin)

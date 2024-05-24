@@ -29,6 +29,7 @@ def login(request):
 
     return render(request, 'login.html', {'form': form})
 
+
 def register(request):
     if request.method == 'GET':
         return render(request, 'register.html')
