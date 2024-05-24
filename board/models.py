@@ -17,6 +17,6 @@ class Board(models.Model):
         return self.title
 
     class Meta:
-        db_table = 'fastcampus_board'
-        verbose_name = '패스트캠퍼스 게시글'
-        verbose_name_plural = '패스트캠퍼스 게시글'
+        db_table = 'board'
+        verbose_name = '게시글'
+        verbose_name_plural = '게시글'
